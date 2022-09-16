@@ -59,7 +59,6 @@ func init_config(filename string) *Configuration {
 
 func echo(w http.ResponseWriter, r *http.Request) {
 	content := r.FormValue("content")
-	fmt.Fprintf(w, "Content:\n")
 	fmt.Fprintf(w, content)
 }
 
